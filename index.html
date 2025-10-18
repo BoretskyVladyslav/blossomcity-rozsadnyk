@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blossom City — Розсадник</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #faf7f5;
+            --accent: #d88fb0;
+            --text: #333;
+            --card-bg: #fff;
+            --secondary: #88b49c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 35px 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: var(--accent);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background: #c87b9b;
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            border-top: 1px dashed #ccc;
+            margin: 25px 0 15px;
+        }
+
+        .subsection-title {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .extra a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: var(--secondary);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .extra a:hover {
+            background: #78a78d;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🌸 Blossom City</h1>
+        <p class="subtitle">Ваш квітковий світ онлайн</p>
+
+        <div class="links">
+            <a href="https://www.instagram.com/blossomcity.florist?igsh=NTI2YzIwbnBvamlh&utm_source=qr" target="_blank">
+                📸 Instagram
+            </a>
+            <a href="https://blossomcity.page.link/blossomcity" target="_blank">
+                📱 Завантажити додаток
+            </a>
+            <a href="https://blossom-city-ua.web.app/" target="_blank">
+                🛍 Інтернет-магазин
+            </a>
+        </div> 
+
+        <div class="divider"></div>
+
+        <div class="extra">
+            <div class="subsection-title">🌿 Інші проєкти</div>
+            <a href="https://lik-centrlviv.org" target="_blank">
+                💚 Кінно-реабілітаційний центр «ЛіК»
+            </a>
+        </div>
+
+        <footer>© 2025 Blossom City</footer>
+    </div>
+</body>
+</html>
